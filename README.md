@@ -60,6 +60,7 @@ https://github.com/andreluispicoli/school/blob/main/school.json
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `long` | **Required**. Id of course to fetch |
 
+
 #### Get Student by id
 
 ```http
@@ -74,6 +75,13 @@ https://github.com/andreluispicoli/school/blob/main/school.json
 
 ```http
   POST http://localhost:8080/students/
+```
+
+body example
+``` reponse
+{
+	"name": "Jorge"
+}
 ```
 
 | Parameter | Type     | Description                       |
@@ -91,6 +99,13 @@ https://github.com/andreluispicoli/school/blob/main/school.json
 | `id`      | `long` | **Required**. Id of student         |
 | `name`    | `string` | **Required**. name of student     |
 
+body example
+``` reponse
+{
+	"name": "Charles"
+}
+```
+
 #### Delete Student
 
 ```http
@@ -104,7 +119,7 @@ https://github.com/andreluispicoli/school/blob/main/school.json
 #### Register Student into Course
 
 ```http
-  POST http://localhost:8080/students/register/1/course/1
+  PUT http://localhost:8080/students/register/1/course/1
 ```
 
 | Parameter | Type     | Description                       |
@@ -156,6 +171,12 @@ https://github.com/andreluispicoli/school/blob/main/school.json
 | :-------- | :------- | :-------------------------------- |
 | `name`      | `string` | **Required**. name of course   |
 
+body example
+``` reponse
+{
+	"name": "Arts"
+}
+```
 
 #### Update Course
 
@@ -167,6 +188,12 @@ https://github.com/andreluispicoli/school/blob/main/school.json
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `long`   | **Required**. Id of course        |
 | `name`    | `string` | **Required**. name of course      |
+
+body example
+``` reponse
+{
+	"name": "Biology"
+}
 
 #### Delete Student
 
