@@ -194,6 +194,7 @@ body example
 {
 	"name": "Biology"
 }
+```
 
 #### Delete Student
 
